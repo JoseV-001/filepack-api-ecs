@@ -116,7 +116,3 @@ unzip -P teste123 validation_pack.zip -d extracted/
 - As senhas não são armazenadas no servidor
 - Cada requisição gera um novo arquivo ZIP
 - Recomenda-se usar senhas fortes (mínimo 8 caracteres, com letras, números e símbolos)
-
-## Licença
-
-Este projeto foi desenvolvido para fins educacionais como parte do blog DevSuperior.
