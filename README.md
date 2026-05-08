@@ -1,7 +1,9 @@
 # FilePack API
-
-# FilePack API
-
+> ⚠️ Este repositório possui duas versões:
+>
+> - 🟦 `v1` (versão original e estável) está disponível na branch `v1`
+> - 🟩 `main` contém a versão mais recente e atualizada do projeto
+---
 Esse projeto é a continuação do projeto de deploy de aplicações na AWS com ECS Fargate, porém uma versão com melhorias.
 
 - Provisionar infraestrutura completa via CloudFormation
@@ -15,7 +17,7 @@ O detalhamento do conteúdo e passo a passo está em [DEMO.md](DEMO.md).
 
 API Spring Boot para empacotamento e criptografia de múltiplos arquivos em um único arquivo ZIP protegido por senha.
 
-## 📋 Descrição
+## Descrição
 
 FilePack API é uma aplicação que recebe múltiplos arquivos via upload e gera um arquivo ZIP criptografado, protegido com a senha fornecida pelo usuário. Ideal para cenários onde é necessário:
 
@@ -24,7 +26,7 @@ FilePack API é uma aplicação que recebe múltiplos arquivos via upload e gera
 - Facilitar o download de múltiplos documentos simultaneamente
 - Garantir segurança no transporte de dados
 
-## 🚀 Como Executar a Aplicação
+## Como Executar a Aplicação
 
 ### Pré-requisitos
 - Java 25 ou superior
@@ -43,7 +45,7 @@ FilePack API é uma aplicação que recebe múltiplos arquivos via upload e gera
 
 A aplicação estará disponível em: `$SERVICE_URL`
 
-## 🔧 Endpoint da API
+## Endpoint da API
 
 **URL:** `POST /api/filepack`
 
@@ -55,7 +57,7 @@ A aplicação estará disponível em: `$SERVICE_URL`
 - Arquivo ZIP criptografado para download
 - Content-Type: `application/zip`
 
-## 📝 Exemplos de Uso com cURL
+## Exemplos de Uso com cURL
 
 > **Nota:** Os arquivos de exemplo estão localizados na pasta `data/` na raiz do projeto.
 
@@ -88,7 +90,7 @@ curl -X POST $SERVICE_URL/api/filepack \
   --output validation_pack.zip
 ```
 
-## 🔓 Como Descompactar o ZIP Resultante
+## Como Descompactar o ZIP Resultante
 
 ## No Windows com GitBash e 7zip
 
@@ -108,13 +110,13 @@ unzip -P teste123 validation_pack.zip -d extracted/
 
 **Nota:** A senha usada para descompactar deve ser a mesma fornecida no parâmetro `password` durante a criação do ZIP.
 
-## 🔒 Segurança
+## Segurança
 
 - O ZIP gerado utiliza criptografia AES
 - As senhas não são armazenadas no servidor
 - Cada requisição gera um novo arquivo ZIP
 - Recomenda-se usar senhas fortes (mínimo 8 caracteres, com letras, números e símbolos)
 
-## 📄 Licença
+## Licença
 
 Este projeto foi desenvolvido para fins educacionais como parte do blog DevSuperior.
