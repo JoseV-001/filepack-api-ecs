@@ -1,8 +1,8 @@
 # FilePack API
 > ⚠️ Este repositório possui duas versões:
 >
-> - 🟦 `v1` (versão original e estável) está disponível na branch `v1`
-> - 🟩 `main` contém a versão mais recente e atualizada do projeto
+> - 🟦 `v1` (versão inicial e mais simples do projeto) está disponível na branch `v1`
+> - 🟩 `main` contém a versão mais recente, com melhorias e evolução do sistema
 ---
 Esse projeto é a continuação do projeto de deploy de aplicações na AWS com ECS Fargate, porém uma versão com melhorias.
 
